@@ -1,16 +1,18 @@
-### SYNCHRONOUS-UP-COUNTER
+### NAME: MADHUPRIYA.R
+### REG NO: 24900083
+# EXPERIMENT 7: SYNCHRONOUS UP COUNTER
 
-**AIM:**
+# AIM:
 
 To implement 4 bit synchronous up counter and validate functionality.
 
-**SOFTWARE REQUIRED:**
+# SOFTWARE REQUIRED:
 
 Quartus prime
 
-**THEORY**
+# THEORY
 
-**4 bit synchronous UP Counter**
+*4 bit synchronous UP Counter*
 
 If we enable each J-K flip-flop to toggle based on whether or not all preceding flip-flop outputs (Q) are “high,” we can obtain the same counting sequence as the asynchronous circuit without the ripple effect, since each flip-flop in this circuit will be clocked at exactly the same time:
 
@@ -26,21 +28,35 @@ Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and 
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
-**Procedure**
+# PROCEDURE
 
-/* write all the steps invloved */
+    1.Initialize the shift register to a known state (e.g., all zeros).
+    
+    2.Input a bit serially into the shift register.
+    
+    3.Shift the contents of the register one position to the right (or left).
+    
+    4.Output the shifted bit from the last stage of the register.
+    
+    5.Repeat steps 2-4 for each bit you want to input and shift.
+    
+# PROGRAM
 
-**PROGRAM**
+![Screenshot 2024-12-22 131908](https://github.com/user-attachments/assets/55b8c240-420b-4aa9-adbb-6985839e3eac)
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+# TRUTH TABLE
 
-Developed by: RegisterNumber:
-*/
+![Screenshot 2024-12-22 165950](https://github.com/user-attachments/assets/7e5753ae-2d50-46b0-b30d-77209a3bad91)
 
-**RTL LOGIC UP COUNTER**
 
-**TIMING DIAGRAM FOR IP COUNTER**
+# RTL LOGIC UP COUNTER
 
-**TRUTH TABLE**
+![Screenshot 2024-12-22 131940](https://github.com/user-attachments/assets/285c571c-b8da-4de0-878b-4538bfd384f1)
 
-**RESULTS**
+
+# TIMING DIAGRAM FOR IP COUNTER
+
+![Screenshot 2024-12-22 133044](https://github.com/user-attachments/assets/754ee35c-761d-45a1-90c1-0a6a12111fdf)
+
+# RESULT
+Thus,the 4-bit synchronus Up counter implemented successfully.
